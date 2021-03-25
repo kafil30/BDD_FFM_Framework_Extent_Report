@@ -1,0 +1,400 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-25T00:00:51.197Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4537376300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "FFM OT member should login",
+        "description": "",
+        "id": "ffm-ot-member-should-be-able-to-login-through-valid-credentials-to-the-ffm-platform;ffm-ot-member-should-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4717522700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 45973300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should able to view the login panel",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_able_to_view_the_login_panel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74956600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be able to give \"blue@mail.com\" and \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "blue@mail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "123456",
+                  "offset": 46
+                }
+              ],
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_give_email_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: Element \u003cinput class\u003d\"fadeIn fourth inputfield\" type\u003d\"submit\"\u003e could not be scrolled into view\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YELLOW\u0027, ip: \u0027209.150.49.137\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 11484, moz:profile: C:\\Users\\Yellow\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: b4676d19-72dc-4e3b-9ed3-0344cac0c4e7\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat com.ffm.pages.FFM_Platform_Login_POM.clickLoginBtn(FFM_Platform_Login_POM.java:44)\r\n\tat com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_click_on_the_login_button(FFM_OT_Member_Login_Steps.java:41)\r\n\tat ✽.I should be able to click on the login button(file:///C:/Users/Yellow/eclipse-workspace/com.ffm.bddFramework/src/main/java/com/ffm/features/TechServe4U_FFM_01_ffmOTLogin.feature:7)\r\n",
+              "duration": 23986200,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I should be able to click on the login button",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_click_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should be able to view the FFM platform",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_view_the_FFM_platform()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-25T00:01:00.636Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4157136700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "FFM OT member should login",
+        "description": "",
+        "id": "ffm-ot-member-should-be-able-to-login-through-valid-credentials-to-the-ffm-platform;ffm-ot-member-should-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 4746589700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24986300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should able to view the login panel",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_able_to_view_the_login_panel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58965400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be able to give \"red@mail.com\" and \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "red@mail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_give_email_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: Element \u003cinput class\u003d\"fadeIn fourth inputfield\" type\u003d\"submit\"\u003e could not be scrolled into view\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YELLOW\u0027, ip: \u0027209.150.49.137\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 10120, moz:profile: C:\\Users\\Yellow\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: aa4e560c-a050-411a-bb19-3e828b6ff0fc\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat com.ffm.pages.FFM_Platform_Login_POM.clickLoginBtn(FFM_Platform_Login_POM.java:44)\r\n\tat com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_click_on_the_login_button(FFM_OT_Member_Login_Steps.java:41)\r\n\tat ✽.I should be able to click on the login button(file:///C:/Users/Yellow/eclipse-workspace/com.ffm.bddFramework/src/main/java/com/ffm/features/TechServe4U_FFM_01_ffmOTLogin.feature:7)\r\n",
+              "duration": 14991300,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I should be able to click on the login button",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_click_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should be able to view the FFM platform",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_view_the_FFM_platform()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-25T00:01:09.646Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4104315400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "FFM OT member should login",
+        "description": "",
+        "id": "ffm-ot-member-should-be-able-to-login-through-valid-credentials-to-the-ffm-platform;ffm-ot-member-should-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 4760121600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30982000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I should able to view the login panel",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_able_to_view_the_login_panel()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52969700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be able to give \"white@mail.com\" and \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "white@mail.com",
+                  "offset": 26
+                },
+                {
+                  "val": "123456",
+                  "offset": 47
+                }
+              ],
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_give_email_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: Element \u003cinput class\u003d\"fadeIn fourth inputfield\" type\u003d\"submit\"\u003e could not be scrolled into view\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YELLOW\u0027, ip: \u0027209.150.49.137\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9392, moz:profile: C:\\Users\\Yellow\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: e2ba6b14-d370-4bba-a41a-23b78d746010\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat com.ffm.pages.FFM_Platform_Login_POM.clickLoginBtn(FFM_Platform_Login_POM.java:44)\r\n\tat com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_click_on_the_login_button(FFM_OT_Member_Login_Steps.java:41)\r\n\tat ✽.I should be able to click on the login button(file:///C:/Users/Yellow/eclipse-workspace/com.ffm.bddFramework/src/main/java/com/ffm/features/TechServe4U_FFM_01_ffmOTLogin.feature:7)\r\n",
+              "duration": 13991700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I should be able to click on the login button",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_click_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I should be able to view the FFM platform",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Login_Steps.i_should_be_able_to_view_the_FFM_platform()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "FFM OT member should be able to login through valid credentials to the FFM platform",
+    "description": "",
+    "id": "ffm-ot-member-should-be-able-to-login-through-valid-credentials-to-the-ffm-platform",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/com/ffm/features/TechServe4U_FFM_01_ffmOTLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-25T00:01:18.616Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4811237200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: Element \u003cinput class\u003d\"fadeIn fourth inputfield\" type\u003d\"submit\"\u003e could not be scrolled into view\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YELLOW\u0027, ip: \u0027209.150.49.137\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210310152336, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6432, moz:profile: C:\\Users\\Yellow\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 250b8e26-8509-4de8-b55f-224d8896358c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat com.ffm.pages.FFM_Platform_Login_POM.clickLoginBtn(FFM_Platform_Login_POM.java:44)\r\n\tat com.ffm.stepDefinitions.HooksSteps.loginFFMOTMember(HooksSteps.java:24)\r\n",
+              "duration": 78953900,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.loginFFMOTMember()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Register a FFM OT member with valid information",
+        "description": "",
+        "id": "register-ffm-ot-member;register-a-ffm-ot-member-with-valid-information",
+        "after": [
+          {
+            "result": {
+              "duration": 4737132400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ffm.stepDefinitions.HooksSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I am on the FFM platform as a FFM OT admin",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Creation_Steps.i_am_on_the_FFM_platform_as_a_FFM_OT_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I click on the Add Super Admin span",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Creation_Steps.i_click_on_the_Add_Super_Admin_span()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I input the fields of OT member",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Creation_Steps.i_input_the_fields_of_OT_member()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I click on the register button",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Creation_Steps.i_click_on_the_register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "It should create a FFM OT member",
+            "match": {
+              "location": "com.ffm.stepDefinitions.FFM_OT_Member_Creation_Steps.it_should_create_a_FFM_OT_member()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AfterLogin"
+          }
+        ]
+      }
+    ],
+    "name": "Register FFM OT Member",
+    "description": "",
+    "id": "register-ffm-ot-member",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/com/ffm/features/TechServe4U_FFM_02_ffmOTmemberCreation.feature",
+    "tags": []
+  }
+]
